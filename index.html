@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outubro Rosa - Toque de Amor e Cuidado</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração de Cores do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rosa: {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            200: '#fbcfe8',
+                            300: '#f9a8d4',
+                            400: '#f472b6',
+                            500: '#ec4899',
+                            600: '#db2777',
+                            700: '#be185d',
+                            800: '#9d174d',
+                            900: '#831843',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Arquivo CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800 relative pb-12">
+
+    <!-- Fundo de Pétalas Animadas -->
+    <div id="petals" class="petals-container"></div>
+
+    <!-- Navegação / Header -->
+    <header class="sticky top-0 z-50 glass-card border-b border-rosa-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i data-lucide="ribbon" class="w-8 h-8 text-rosa-600 animate-pulse"></i>
+                <span class="font-serif text-xl sm:text-2xl font-bold text-rosa-700 tracking-wide">Outubro Rosa</span>
+            </div>
+            <nav class="hidden md:flex gap-6 font-medium text-rosa-800">
+                <a href="#autoexame" class="hover:text-rosa-600 transition">Autoexame</a>
+                <a href="#mitos" class="hover:text-rosa-600 transition">Mitos & Verdades</a>
+                <a href="#jogo" class="hover:text-rosa-600 transition">Minijogo Interativo</a>
+            </nav>
+            <a href="#jogo" class="bg-rosa-600 hover:bg-rosa-700 text-white font-semibold px-4 py-2 rounded-full text-sm shadow-md hover:shadow-lg transition flex items-center gap-2">
+                <i data-lucide="gamepad-2" class="w-4 h-4"></i> Jogar
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative z-10 max-w-5xl mx-auto px-4 pt-12 pb-8 text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rosa-100 text-rosa-700 font-semibold text-xs sm:text-sm mb-6 border border-rosa-300 shadow-sm">
+            <i data-lucide="heart" class="w-4 h-4 fill-rosa-500 text-rosa-500"></i> Se amar é se cuidar!
+        </div>
+        <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl font-extrabold text-rosa-900 leading-tight mb-6">
+            Sua saúde é preciosa. <br class="hidden sm:block"/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-rosa-600 to-pink-500">
+                Previna-se com amor.
+            </span>
+        </h1>
+        <p class="max-w-2xl mx-auto text-gray-600 text-base sm:text-lg mb-8 leading-relaxed">
+            O Outubro Rosa é um lembrete para ouvirmos nosso corpo. A detecção precoce salva vidas e aumenta em até 95% as chances de cura.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#autoexame" class="bg-rosa-600 hover:bg-rosa-700 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition flex items-center gap-2 text-base">
+                <i data-lucide="sparkles" class="w-5 h-5"></i> Aprenda o Autoexame
+            </a>
+            <a href="#jogo" class="bg-white hover:bg-rosa-50 text-rosa-700 border border-rosa-300 font-semibold px-6 py-3 rounded-xl shadow-md transition flex items-center gap-2 text-base">
+                <i data-lucide="gamepad-2" class="w-5 h-5"></i> Jogar Agora
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção Passo a Passo Autoexame -->
+    <section id="autoexame" class="relative z-10 max-w-5xl mx-auto px-4 py-12">
+        <div class="text-center mb-10">
+            <h2 class="font-serif text-2xl sm:text-4xl font-bold text-rosa-900 mb-3">Guia Rápido do Autoexame</h2>
+            <p class="text-gray-600 text-sm sm:text-base">Conhecer as próprias mamas é o primeiro passo. Realize o exame mensalmente!</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Passo 1 -->
+            <div class="glass-card rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300 border-t-4 border-rosa-500 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-rosa-100 text-rosa-700 font-serif font-bold text-xl rounded-full flex items-center justify-center mb-4 border border-rosa-300">
+                        1
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-rosa-900 mb-2">No Espelho</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Observe com os braços abaixados, depois levantados e na cintura. Fique atenta a alterações no contorno, formato ou na pele.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Passo 2 -->
+            <div class="glass-card rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300 border-t-4 border-rosa-500 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-rosa-100 text-rosa-700 font-serif font-bold text-xl rounded-full flex items-center justify-center mb-4 border border-rosa-300">
+                        2
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-rosa-900 mb-2">No Banho</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Com a pele ensaboada, erga o braço esquerdo e palpe a mama esquerda com a mão direita em movimentos circulares. Repita no outro lado.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Passo 3 -->
+            <div class="glass-card rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300 border-t-4 border-rosa-500 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-rosa-100 text-rosa-700 font-serif font-bold text-xl rounded-full flex items-center justify-center mb-4 border border-rosa-300">
+                        3
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-rosa-900 mb-2">Deitada</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Deite-se e coloque um travesseiro sob o ombro direito. Palpe a mama com a mão esquerda do centro para fora e pressione suavemente o mamilo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Mitos e Verdades -->
+    <section id="mitos" class="relative z-10 max-w-5xl mx-auto px-4 py-12">
+        <div class="text-center mb-10">
+            <h2 class="font-serif text-2xl sm:text-4xl font-bold text-rosa-900 mb-3">Mitos e Verdades</h2>
+            <p class="text-gray-600 text-sm sm:text-base">Clique nos cards abaixo para descobrir a verdade sobre a prevenção.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="flip-card h-64 perspective-1000 cursor-pointer">
+                <div class="flip-card-inner relative w-full h-full rounded-2xl shadow-md duration-500">
+                    <div class="flip-card-front glass-card absolute inset-0 rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-rosa-200">
+                        <span class="text-xs uppercase font-bold tracking-wider text-rosa-600 mb-2">Mito ou Verdade?</span>
+                        <h3 class="font-serif font-bold text-lg text-rosa-900">Apenas mulheres com histórico familiar têm risco?</h3>
+                        <p class="text-xs text-gray-400 mt-4">Clique para virar</p>
+                    </div>
+                    <div class="flip-card-back bg-rosa-600 text-white absolute inset-0 rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+                        <span class="text-xs font-bold uppercase tracking-wider text-rosa-200 mb-2">MITO!</span>
+                        <p class="text-sm leading-relaxed">
+                            Cerca de 80% dos casos de câncer de mama ocorrem em mulheres sem histórico familiar conhecido. O rastreamento é essencial para todas!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flip-card h-64 perspective-1000 cursor-pointer">
+                <div class="flip-card-inner relative w-full h-full rounded-2xl shadow-md duration-500">
+                    <div class="flip-card-front glass-card absolute inset-0 rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-rosa-200">
+                        <span class="text-xs uppercase font-bold tracking-wider text-rosa-600 mb-2">Mito ou Verdade?</span>
+                        <h3 class="font-serif font-bold text-lg text-rosa-900">Hábitos saudáveis ajudam a prevenir o câncer de mama?</h3>
+                        <p class="text-xs text-gray-400 mt-4">Clique para virar</p>
+                    </div>
+                    <div class="flip-card-back bg-rosa-600 text-white absolute inset-0 rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+                        <span class="text-xs font-bold uppercase tracking-wider text-rosa-200 mb-2">VERDADE!</span>
+                        <p class="text-sm leading-relaxed">
+                            Alimentação equilibrada, rotina de exercícios físicos, evitar o tabagismo e o álcool podem reduzir o risco em até 30%.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flip-card h-64 perspective-1000 cursor-pointer">
+                <div class="flip-card-inner relative w-full h-full rounded-2xl shadow-md duration-500">
+                    <div class="flip-card-front glass-card absolute inset-0 rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-rosa-200">
+                        <span class="text-xs uppercase font-bold tracking-wider text-rosa-600 mb-2">Mito ou Verdade?</span>
+                        <h3 class="font-serif font-bold text-lg text-rosa-900">A mamografia é o principal exame de diagnóstico?</h3>
+                        <p class="text-xs text-gray-400 mt-4">Clique para virar</p>
+                    </div>
+                    <div class="flip-card-back bg-rosa-600 text-white absolute inset-0 rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+                        <span class="text-xs font-bold uppercase tracking-wider text-rosa-200 mb-2">VERDADE!</span>
+                        <p class="text-sm leading-relaxed">
+                            A mamografia consegue identificar nódulos minúsculos antes mesmo de serem palpáveis, aumentando significativamente as chances de cura.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Minijogo Educativo -->
+    <section id="jogo" class="relative z-10 max-w-4xl mx-auto px-4 py-12">
+        <div class="text-center mb-8">
+            <h2 class="font-serif text-2xl sm:text-4xl font-bold text-rosa-900 mb-3">Minijogo do Cuidado</h2>
+            <p class="text-gray-600 text-sm sm:text-base">Mova a cesta para pegar hábitos saudáveis (💖🍎🏃‍♀️🎗️) e evite fatores de risco (🚬🍺)!</p>
+        </div>
+
+        <div class="relative w-full max-w-[400px] mx-auto bg-white/80 rounded-2xl shadow-xl overflow-hidden border-2 border-rosa-300">
+            <canvas id="gameCanvas" width="400" height="400" class="block w-full h-auto bg-rosa-50"></canvas>
+
+            <!-- Overlay Tela Inicial -->
+            <div id="gameStartOverlay" class="absolute inset-0 bg-rosa-900/80 backdrop-blur-sm flex flex-col items-center justify-center p-6 text-white text-center">
+                <i data-lucide="gamepad-2" class="w-12 h-12 mb-3 text-rosa-300"></i>
+                <h3 class="font-serif text-2xl font-bold mb-2">Desafio da Prevenção</h3>
+                <p class="text-sm text-rosa-100 mb-6 max-w-xs">Colete bons hábitos em 15 segundos e desvie do que faz mal!</p>
+                <button id="btnStartGame" class="bg-rosa-500 hover:bg-rosa-600 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition">
+                    Começar a Jogar
+                </button>
+            </div>
+
+            <!-- Overlay Game Over -->
+            <div id="gameOverOverlay" class="hidden absolute inset-0 bg-rosa-900/85 backdrop-blur-sm flex flex-col items-center justify-center p-6 text-white text-center">
+                <i data-lucide="trophy" class="w-12 h-12 mb-3 text-yellow-300"></i>
+                <h3 class="font-serif text-2xl font-bold mb-2">Fim de Jogo!</h3>
+                <p id="finalScoreText" class="text-lg font-semibold text-rosa-200 mb-6">Sua pontuação: 0 pontos!</p>
+                <button id="btnRestartGame" class="bg-rosa-500 hover:bg-rosa-600 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition">
+                    Jogar Novamente
+                </button>
+            </div>
+        </div>
+
+        <!-- Controles para dispositivos Touch/Móveis -->
+        <div class="flex justify-center gap-4 mt-4">
+            <button id="btnLeft" class="bg-rosa-600 active:bg-rosa-700 text-white font-bold px-8 py-3 rounded-xl shadow-md text-lg select-none">
+                ◀ Esquerda
+            </button>
+            <button id="btnRight" class="bg-rosa-600 active:bg-rosa-700 text-white font-bold px-8 py-3 rounded-xl shadow-md text-lg select-none">
+                Direita ▶
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative z-10 text-center py-8 text-xs text-rosa-800 border-t border-rosa-200 mt-12">
+        <p>Outubro Rosa - Conscientização e Prevenção do Câncer de Mama.</p>
+    </footer>
+
+    <!-- Arquivo JS Externo -->
+    <script src="script.js"></script>
+</body>
+</html>
